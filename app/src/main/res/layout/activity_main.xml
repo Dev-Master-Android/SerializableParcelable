@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        android:elevation="@dimen/_4dp"
+        android:title="@string/bookAddress"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:titleTextColor="@android:color/white"
+        app:titleTextColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        android:padding="@dimen/_16dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/name"
+            android:padding="@dimen/_12dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/lastName"
+            android:textColorHint="@color/grey"
+            android:padding="@dimen/_12dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/addressInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/address"
+            android:textColorHint="@color/grey"
+            android:padding="@dimen/_12dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/phone"
+            android:textColorHint="@color/grey"
+            android:padding="@dimen/_12dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/save"
+            android:textColor="@android:color/black" />
+
+        <ListView
+            android:id="@+id/personListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:cacheColorHint="@color/black"
+            android:background="@drawable/rounded_edittext"
+            />
+    </LinearLayout>
+</LinearLayout>

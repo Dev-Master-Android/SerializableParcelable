@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".DetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        android:elevation="@dimen/_4dp"
+        app:title="@string/info"
+        app:titleTextColor="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:titleTextColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="@dimen/_100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_16dp"
+        android:contentDescription="@string/avatar"
+        android:src="@drawable/ic_avatar" />
+    <TextView
+        android:id="@+id/firstNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_textview"
+        android:padding="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_16dp"/>
+
+    <TextView
+        android:id="@+id/lastNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_textview"
+        android:padding="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_8dp"/>
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_textview"
+        android:padding="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_8dp"/>
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_textview"
+        android:padding="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_8dp"/>
+</LinearLayout>
