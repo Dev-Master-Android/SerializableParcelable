@@ -76,6 +76,12 @@ class MainActivity : AppCompatActivity() {
                 address.text.toString(),
                 phone.text.toString()
             )
+            if(person.firstName.isEmpty() ||
+                person.lastName.isEmpty() ||
+                person.address.isEmpty()  ||
+                person.phone.isEmpty()) {
+                return@setOnClickListener
+            }
             addressBook.addPerson(person)
             adapter.add("${person.firstName} ${person.lastName}")
             firstName.text.clear()
